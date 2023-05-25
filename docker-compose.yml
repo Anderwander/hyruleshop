@@ -20,10 +20,10 @@ services:
     container_name: node-egames
     restart: always
     environment:
-      - VIRTUAL_HOST=api.hyruleshop.jesuscabado.com
+      - VIRTUAL_HOST=api.hyruleshop.anderwander.com
       - VIRTUAL_PORT=3000
-      - LETSENCRYPT_HOST=api.hyruleshop.jesuscabado.com
-      - LETSENCRYPT_EMAIL=admin@jesuscabado.com
+      - LETSENCRYPT_HOST=api.hyruleshop.anderwander.com
+      - LETSENCRYPT_EMAIL=admin@anderwander.com
     expose:
       - 3000
     depends_on:
@@ -39,10 +39,10 @@ services:
     container_name: react-egames
     restart: always
     environment:
-      - VIRTUAL_HOST=hyruleshop.jesuscabado.com
+      - VIRTUAL_HOST=hyruleshop.anderwander.com
       - VIRTUAL_PORT=80
-      - LETSENCRYPT_HOST=hyruleshop.jesuscabado.com
-      - LETSENCRYPT_EMAIL=admin@jesuscabado.com
+      - LETSENCRYPT_HOST=hyruleshop.anderwander.com
+      - LETSENCRYPT_EMAIL=admin@anderwander.com
     expose:
       - 80
     depends_on:

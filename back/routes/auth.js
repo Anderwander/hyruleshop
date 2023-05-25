@@ -35,7 +35,7 @@ authRouter.get(
       { expiresIn: "12h" }
     );
     res.redirect(
-      `https://hyruleshop.jesuscabado.com/login?token=${token}&id=${user.iduser}`
+      `http://hyruleshop.anderwander.com/login?token=${token}&id=${user.iduser}`
     );
   }
 );
